@@ -1,8 +1,7 @@
-﻿using DemoAPI.Domain.Entities.Base;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace DemoAPI.Domain.Attributes
+namespace DemoAPI.Application.Attributes
 {
     [AttributeUsage(AttributeTargets.Parameter, Inherited = false, AllowMultiple = true)]
     public class RequiredParameterAttribute : ValidationAttribute
@@ -11,7 +10,7 @@ namespace DemoAPI.Domain.Attributes
         {
             if (value == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException("parameter");
             }
 
             return true;

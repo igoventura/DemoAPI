@@ -1,25 +1,15 @@
 ﻿using DemoAPI.Application.Interfaces;
 using DemoAPI.Application.ViewModels;
+using DemoAPI.Controllers.Base;
+using DemoAPI.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace DemoAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TransactionsController : ControllerBase
+    public class TransactionsController : BaseController<Transactions, TransactionsViewModel>
     {
-        private readonly ITransactionsService _transactionsService;
-
-        public TransactionsController(ITransactionsService transactionsService)
-        {
-            _transactionsService = transactionsService;
-        }
-
-        [HttpGet]
-        public IEnumerable<TransactionsViewModel> GetTransactions()
-        {
-            return _transactionsService.GetTransactions();
-        }
+        public TransactionsController(ITransactionsService transactionsService) : base(transactionsService) { }
     }
 }

@@ -7,6 +7,8 @@ namespace DemoAPI.Application.ViewModels.Base
         where Entity : class, new()
         where DTO : class, new()
     {
+        public int Id { get; set; }
+
         private static readonly MapperConfiguration config = new MapperConfiguration(cfg =>
         {
             cfg.CreateMap<Entity, DTO>();
