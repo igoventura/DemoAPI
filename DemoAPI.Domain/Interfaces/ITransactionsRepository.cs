@@ -1,10 +1,9 @@
 ﻿using DemoAPI.Domain.Entities;
-using System.Collections.Generic;
+using DemoAPI.Domain.Interfaces.Base;
 
 namespace DemoAPI.Domain.Interfaces
 {
-    public interface ITransactionsRepository
+    public interface ITransactionsRepository : IRepository<Transactions>
     {
-        IEnumerable<Transactions> GetTransactions();
     }
 }

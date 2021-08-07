@@ -18,7 +18,7 @@ namespace DemoAPI.Application.Services
         {
             return new TransactionsViewModel
             {
-                Transactions = _transactionsRepository.GetTransactions()
+                Transactions = _transactionsRepository.GetAll()
             };
         }
     }

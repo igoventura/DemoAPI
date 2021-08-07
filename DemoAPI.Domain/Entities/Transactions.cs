@@ -1,8 +1,9 @@
-﻿namespace DemoAPI.Domain.Entities
+﻿using DemoAPI.Domain.Entities.Base;
+
+namespace DemoAPI.Domain.Entities
 {
-    public class Transactions
+    public class Transactions : Entity
     {
-        public int Id { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
