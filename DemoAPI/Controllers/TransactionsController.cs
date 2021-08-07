@@ -1,6 +1,7 @@
 ﻿using DemoAPI.Application.Interfaces;
 using DemoAPI.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace DemoAPI.Controllers
 {
@@ -16,7 +17,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpGet]
-        public TransactionsViewModel GetTransactions()
+        public IEnumerable<TransactionsViewModel> GetTransactions()
         {
             return _transactionsService.GetTransactions();
         }

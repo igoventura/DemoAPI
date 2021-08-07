@@ -1,9 +1,10 @@
 ﻿using DemoAPI.Application.ViewModels;
+using System.Collections.Generic;
 
 namespace DemoAPI.Application.Interfaces
 {
     public interface ITransactionsService
     {
-        TransactionsViewModel GetTransactions();
+        IEnumerable<TransactionsViewModel> GetTransactions();
     }
 }

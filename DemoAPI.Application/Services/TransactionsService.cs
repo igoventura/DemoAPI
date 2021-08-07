@@ -2,6 +2,7 @@
 using DemoAPI.Application.ViewModels;
 using DemoAPI.Domain.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace DemoAPI.Application.Services
 {
@@ -14,12 +15,9 @@ namespace DemoAPI.Application.Services
             _transactionsRepository = transactionsRepository;
         }
 
-        public TransactionsViewModel GetTransactions()
+        public IEnumerable<TransactionsViewModel> GetTransactions()
         {
-            return new TransactionsViewModel
-            {
-                Transactions = _transactionsRepository.GetAll()
-            };
+            return TransactionsViewModel.FromEntityEnumerable(_transactionsRepository.GetAll());
         }
     }
 }
