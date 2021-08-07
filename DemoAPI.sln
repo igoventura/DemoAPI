@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI", "DemoAPI\DemoAPI.csproj", "{25404B93-287C-40A1-834D-6982233DC384}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B0ADCAA-B841-4D86-B31C-31F9CEA98FC8}"
-	ProjectSection(SolutionItems) = preProject
-		DemoAPI\README.md = DemoAPI\README.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9285F6E1-9AEE-48FF-B78A-2D4F04AC50B4}"
 EndProject
@@ -22,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI.Application", "Demo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF7DB18B-9F02-45C3-B7E7-81581BCB24C6}"
 	ProjectSection(SolutionItems) = preProject
-		DemoAPI\README.md = DemoAPI\README.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
