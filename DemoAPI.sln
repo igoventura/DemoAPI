@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B0ADCAA-B84
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9285F6E1-9AEE-48FF-B78A-2D4F04AC50B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI.Domain", "DemoAPI.Domain\DemoAPI.Domain.csproj", "{C0C0BB66-54C9-4069-B302-8B600CEA10A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI.Domain", "DemoAPI.Domain\DemoAPI.Domain.csproj", "{C0C0BB66-54C9-4069-B302-8B600CEA10A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI.Infrastructure.Data", "DemoAPI.Infrastructure.Data\DemoAPI.Infrastructure.Data.csproj", "{78A8833C-370F-41AA-AC7A-5A58D0774659}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI.Infrastructure.Data", "DemoAPI.Infrastructure.Data\DemoAPI.Infrastructure.Data.csproj", "{78A8833C-370F-41AA-AC7A-5A58D0774659}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI.Infrastructure.IoC", "DemoAPI.Infrastructure.IoC\DemoAPI.Infrastructure.IoC.csproj", "{7F33EB6B-9FCC-48C2-BC47-9C431F53F30E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI.Infrastructure.IoC", "DemoAPI.Infrastructure.IoC\DemoAPI.Infrastructure.IoC.csproj", "{7F33EB6B-9FCC-48C2-BC47-9C431F53F30E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI.Application", "DemoAPI.Application\DemoAPI.Application.csproj", "{1E76D830-0B79-4EF2-80F3-30E33CC86CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI.Application", "DemoAPI.Application\DemoAPI.Application.csproj", "{1E76D830-0B79-4EF2-80F3-30E33CC86CEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
