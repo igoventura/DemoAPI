@@ -1,16 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Collection" Version="7.0.1" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\DemoAPI.Domain\DemoAPI.Domain.csproj" />
   </ItemGroup>
-
 </Project>
